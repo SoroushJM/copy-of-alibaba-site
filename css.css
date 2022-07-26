@@ -523,3 +523,45 @@ body{
 .texts a{
   color: #0077db;
 }
+.footer{
+  background-color: white;
+}
+.khodnamii{
+  display: flex;
+  flex-direction: row-reverse;
+  list-style-type: none;
+  justify-content: space-around;
+  padding: 32px;
+}
+.khodnamii li img{
+  float: right;
+  max-width: 89px;
+}
+.khodnamii :is(h3 , span){
+  text-align: right;
+}
+.khodnamii h3{
+  font-size: 1rem;
+  color: #4b5259!important;
+  margin-bottom: 0.5rem;
+}
+.khodnamii span{
+  color: #6c7680!important;
+  font-size: .875rem!important;
+  display: flex;
+  font-size: .75rem;
+  list-style: none;
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
+}
+.footer .divider{
+  margin: 1rem 2rem;
+  align-self: stretch;
+  min-height: 1px;
+  min-width: 1px;
+  border: none;
+  display: flex;
+  height: auto;
+  width: 90%;
+  background: #6c7680;
+}
