@@ -1,0 +1,525 @@
+*{font-family: alibaba;}
+a{
+  color: inherit;
+  text-decoration: inherit;
+}
+@font-face {
+  font-family: alibaba;
+  src: url(fonts/alibaba-regular.woff2-5d2979c4.woff2)format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: alibaba;
+  font-weight: 700;
+  font-style: normal;
+  src: url(fonts/alibaba-bold.woff2-bbb24413.woff2)format("woff2");
+}
+@font-face {
+  font-family: alibaba;
+  src: url(fonts/alibaba-black.woff2-41970917.woff2);
+  font-weight: 900;
+  font-style: normal;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(246,246,246);
+}
+.divider {
+  width: 1px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  background-color: #4b52594f;
+}
+.nav{
+  margin: 0px 20px;
+  padding: 0px;
+  height: 64px !important;
+  display: flex;
+  align-items: center;
+}
+.nav-right{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.kaleVaMatn{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-left: 40px;
+}
+.nav-neveshte-kenar-svg{
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nav-neveshte-kenar-svg p{
+  margin: 0;
+  margin-top: 4px;
+  padding: 0;
+  font-size:9.5px;
+}
+.nav-right .buttons{
+  background-color: rgba(255, 255, 255, 0.12);
+  border:none;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-family:alibaba;
+  font-size: 16px;
+  cursor: pointer;
+  color: #4b5259;
+  margin: 0px 15px;
+}
+.buttons span{
+  margin-left: 8px;
+}
+
+.nav-left{
+  margin-right: auto ;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  flex-shrink: 0;
+}
+.nav-left .buttons{
+  background-color: rgba(255, 255, 255, 0.12);
+  margin: 15px;
+  border:none;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-family:alibaba;
+  font-size: 16px;
+  cursor: pointer;
+  color: #4b5259;
+}
+.hover-elemnt{
+  position: relative;
+}
+.hover-elemnt ul{
+  border: 1px solid rgb(224,224,224);
+  border-radius: 8px;
+  position: absolute;
+  background-color: rgb(255,255,255);
+  list-style: none;
+  text-align: right;
+  width: auto;
+  height: auto;
+  font-size: 14px;
+  display: none;
+  padding-inline-start: 0px;
+  top: 8px;
+  width: calc(100% + 20px);
+}
+.hover-elemnt ul li{
+  margin: 10px 4px !important;
+  padding: 0px;
+  color: #4b5259;
+  margin: auto 4px;
+  flex-shrink: 0;
+  box-sizing: content-box;
+  padding-right: 4px;
+  transition: 5s;
+}
+.hover-elemnt ul .divider{
+  width: 80%;
+  height: 0px;
+  border-bottom: 1px solid rgb(224,224,224);
+  flex-shrink: 0;
+  margin: 0px auto !important;
+}
+.hover-elemnt:hover ul, .hover-elemnt ul:hover{
+  display: block;
+}
+@media (max-width: 1050px){
+  .nav{
+    margin:0px;
+  }
+}
+@media (max-width: 1030px){
+  .kaleVaMatn{
+    margin-left: auto;
+  }
+}
+@media (max-width: 1000px){
+  .nav-neveshte-kenar-svg{
+    display: none;
+  }
+}
+@media (max-width: 910px){
+  .nav-left{
+    display: none;
+  }
+  .nav{
+    flex-direction: row-reverse;
+  }
+}
+/* akhar nav ---------------------------------------------------------------- */
+.hero{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  z-index: 0;
+}
+.hero img{
+  max-width: 100%;
+}
+/* main container ------------------------------------------------------------- */
+.maincontainer{
+  background-color: transparent;
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start; /*main axis*/
+  align-items: center; /*cross axis*/
+  position: relative;
+  top: -30px;
+  z-index: 1;
+
+}
+.maincontainer .firstelement{
+  background-color: white;
+  width: 90%;
+  border: 1px solid rgb(224,224,224);
+  border-radius: 10px;
+}
+.maincontainer .firstelement .top{
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  color: #4B5259;
+}
+.maincontainer .firstelement .top .items{
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; /*main axis*/
+  align-items: center; /*cross axis*/
+}
+.maincontainer .firstelement .top .items p{
+  margin: 0px;
+}
+.maincontainer .firstelement .top .items a{
+  color: inherit;
+  text-decoration: inherit;
+}
+.maincontainer .firstelement .hr{
+  border-top: 1px solid rgb(224,224,224);
+  width: 100%;
+  height: 1px;
+}
+.maincontainer .firstelement .bottom {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: stretch;
+  color: #4B5259;
+  height: 50px;
+  flex-wrap: wrap;
+}
+.maincontainer .firstelement .bottom .mabdae{
+  border: 1px solid rgb(190,198,204);
+  border-radius: 10px;
+  color: #4B5259;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin: 0px 10px;
+  flex-grow: 4;
+}
+.maincontainer .firstelement .bottom .mabdae p{
+  flex-grow: 1;
+  text-align: right;
+  color: #9CA4AC;
+}
+.maincontainer .firstelement .bottom .tarikhraft{
+  border: 1px solid rgb(190,198,204);
+  border-radius: 10px;
+  color: #4B5259;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin: 0px 10px;
+  flex-grow: 3;
+  color: #9CA4AC;
+}
+.maincontainer .firstelement .bottom .tarikhraft p{
+  flex-grow: 1; 
+  text-align: right
+}
+.maincontainer .firstelement .bottom .tarikhraft .vl{
+  border-left: 1px solid rgb(190,198,204);
+  height: 100%;
+  width: 1px;
+  margin: 0px 10px;
+  
+}
+.maincontainer .firstelement .bottom .mosaferan{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  border: 1px solid rgb(190,198,204);
+  border-radius: 10px;
+  margin: 0px 10px;
+  flex-grow: 2;
+
+}
+.maincontainer .firstelement .bottom .jostojo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 2;
+  flex-direction: row-reverse;
+  background-color: rgb(229,163,8);
+  color: black;
+  border: 1px solid rgb(190,198,204);
+  border-radius: 10px;
+  margin: 0px 10px;
+}
+.maincontainer .firstelement .bottom p{
+  margin:0px 5px;
+}
+
+@media(max-width: 700px){
+  .maincontainer{
+    top: 0px;
+  }
+  .maincontainer .firstelement{
+    width: 100%;
+  }
+  .maincontainer .firstelement .bottom .mabdae {
+    margin-left: 0px;
+    margin-right:0px;
+  }
+  .maincontainer .firstelement .bottom .tarikhraft {
+    margin-left: 0px;
+    margin-right:0px;
+  }
+  .maincontainer .firstelement .bottom .mosaferan {
+    margin-left: 0px;
+    margin-right:0px;
+  }
+  .maincontainer .firstelement .bottom .jostojo {
+    margin-left: 0px;
+    margin-right:0px;
+  }
+}
+/* end of firstelement ------------------------------ */
+.secendelement{
+  background-color: white;
+  width: 90%;
+  border: 1px solid rgb(224,224,224);
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  padding: 16px 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+@media(max-width: 700px){
+  .secendelement{
+    width: 100%;
+  }
+}
+.secendelement .items{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+}
+.secendelement .items svg{
+  background-color: rgb(232,249,252);
+  color: rgb(75,183,201);
+  width: 16px;
+  height: auto;
+}
+.secendelement .items h4{
+  margin: 0px;
+  margin-top: 4px;
+  font-weight: 700;
+  color: #4b5259;
+  font-size: 16px;
+}
+.secendelement .items p{
+  margin: 0px;
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6c7680;
+}
+.secendelement .items a{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-content: center;
+  margin: 0px;
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #0077db;
+}
+.secendelement .items a svg{
+  color: #0077db;
+}
+.secendelement .items a p{
+  margin: 0px;
+  margin-left: 10px;
+  color: #0077db;
+}
+.thirdelement{
+  background-color: transparent;
+  width: 90%;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.thirdelement img{
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+.thirdelement .img{
+  width:calc(50% - 5px);
+  border: 0px solid transparent;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.fourthelement{
+  background-color: white;
+  width: 90%;
+  border: 1px solid rgb(224,224,224);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0px;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+.neveshte{
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end
+}
+#neveste1{
+  font-size: 20px;
+  font-weight: 900;
+  color: black;
+  text-align: right;
+}
+#neveste2{
+  font-family: alibaba - 500;
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  text-align: right;
+}
+.neveshte a{
+  display: flex;
+  font-family: alibaba - 400;
+  font-size: 16px;
+  font-weight: 500;
+  color: #0077db;
+  text-align: right;
+  justify-content: space-between;
+  align-items: center;
+}
+.neveshte a p {
+  margin: 0;
+  padding: 0;
+}
+.fourthelement .img{
+  width: 369px;
+  height: auto;
+  overflow: hidden;
+}
+.fourthelement .img img{
+  width: 100%;
+  height: auto;
+}
+.porsesh{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.porsesh h1{
+  font-size: 20px;
+}
+.porsesh .items{
+  background-color: white;
+  width: 100%;
+  border: 1px solid rgb(224,224,224);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-bottom: 30px;
+  box-shadow: 0px 2px 10px -7px;
+}
+.porsesh .items .svg1{
+  background-color: rgb(232,249,252);
+  color:rgb(23,162,184) ;
+  width: 16px;
+  height: auto;
+  margin-right: 20px;
+}
+.porsesh .items p{
+  margin-right: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #4b5259;
+
+}
+.porsesh .items .svg2{
+  margin-right: auto;
+  margin-left: 15px;
+}
+/* where text starts -------------- */
+.texts{
+  width: 90%;
+}
+.texts h1{
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  text-align: right;
+}
+.texts img{
+  width: 38%;
+  float: left;
+  display: block;
+}
+.texts p{
+  /* width: calc(100% - 456px); */
+  text-align: right;
+  line-height: 32px;
+  font-size: 14px;
+  color: #4b5259;
+  font-weight: 400;
+}
+.texts h2{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #2b2f33;
+  text-align: right;
+}
+.texts a{
+  color: #0077db;
+}
