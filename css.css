@@ -563,5 +563,50 @@ body{
   display: flex;
   height: auto;
   width: 90%;
-  background: #6c7680;
+  background: rgb(224,224,224);
+}
+.grid-container{
+  display: grid;
+  grid-template-columns:  3fr 1fr 1fr 1fr;
+  padding-top: 2rem;
+  padding-left: 0;
+  padding-right: 0;
+  column-gap:20px;
+  text-align: right;
+}
+.grid-container h4{
+  font-weight: 400;
+  font-size: 16px;
+  color:black;
+}
+.grid-container P{
+  font-weight: 400;
+  font-size: 14px;
+  color: #4B5259;
+
+}
+.grid-container .item1{
+  grid-row-start: span 1;
+  order: 4;
+}
+.grid-container .item2{
+ order: 3;
+}
+.grid-container .item3{
+ order: 2;
+}
+.grid-container .item4{
+ order:1;
+}
+.item4img{
+  display: block;
+  width: 189px;
+  height: auto !important;
+  margin-right: auto;
+}
+.footerimg{
+  width: 69px;
+  height: 60px;
+  border: 1px solid rgb(237,237,237);
+  overflow: hidden;
 }
