@@ -161,12 +161,17 @@ body{
 }
 /* akhar nav ---------------------------------------------------------------- */
 .hero{
-  margin: 0px;
+  margin: auto;
   padding: 0px;
   width: 100%;
   z-index: 0;
+  background-color:rgb(252, 184, 18) ;
 }
 .hero img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
   max-width: 100%;
 }
 /* main container ------------------------------------------------------------- */
@@ -177,7 +182,6 @@ body{
   justify-content: flex-start; /*main axis*/
   align-items: center; /*cross axis*/
   position: relative;
-  top: -30px;
   z-index: 1;
 
 }
@@ -213,6 +217,7 @@ body{
   height: 1px;
 }
 .maincontainer .firstelement .bottom {
+  margin: 1rem;
   display: flex;
   justify-content: center;
   flex-direction: row-reverse;
